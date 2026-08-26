@@ -1,0 +1,13 @@
+# git の名義を正す表。
+#
+# `git log` / `git shortlog` / `git blame` はこの表を通して名前を出す。
+# **履歴そのものは書き換えていない。**コミットに記録された author は元のままで、
+# GitHub のコミットページの表示にも反映されない。SHA も変わらない。
+#
+# mitaberu <mitaberu03@gmail.com> は GitHub アカウントではなく（users/mitaberu は 404）、
+# org のメンバーでもない。誰かのローカル git config に入っていた値が、
+# 52 リポジトリ・2,605 コミットに記録されている（2026-08-26 実測）。
+# 会社の名義は appful-devteam <info@appful.tokyo>。
+#
+# ⚠ 名義を揃えても著作権は移らない。権利の処理は契約で行う。
+appful-devteam <info@appful.tokyo> mitaberu <mitaberu03@gmail.com>
