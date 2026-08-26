@@ -1,13 +1,16 @@
 # git の名義を正す表。
 #
-# `git log` / `git shortlog` / `git blame` はこの表を通して名前を出す。
-# **履歴そのものは書き換えていない。**コミットに記録された author は元のままで、
-# GitHub のコミットページの表示にも反映されない。SHA も変わらない。
+# 2026-08-26 に履歴そのものを書き換えた（52 リポジトリ・author 3,053 件）ので、
+# この表はもう効かせる相手がいない。**これから紛れ込んだときの受け皿として残す。**
 #
-# mitaberu <mitaberu03@gmail.com> は GitHub アカウントではなく（users/mitaberu は 404）、
-# org のメンバーでもない。誰かのローカル git config に入っていた値が、
-# 52 リポジトリ・2,605 コミットに記録されている（2026-08-26 実測）。
-# 会社の名義は appful-devteam <info@appful.tokyo>。
-#
-# ⚠ 名義を揃えても著作権は移らない。権利の処理は契約で行う。
-appful-devteam <info@appful.tokyo> mitaberu <mitaberu03@gmail.com>
+# ⚠ 名前まで書く形（`Proper <a> Name <b>`）は、その名前のときしか当たらない。
+#   実際 `mitaberu` だけを書いていて `mitaberu03` と `Mitaberu` を取りこぼした。
+#   そのメールが一人専用ならメールだけで照合する形（`Proper <a> <b>`）にする。
+appful-devteam <info@appful.tokyo> <mitaberu03@gmail.com>
+
+# ⚠ ここから下は「他の人と共有しているメール」。**メールだけで照合してはいけない。**
+#   chisatof0131@gmail.com は藤田千里さんのメールで、本人名義のコミットが別に 719 件ある。
+#   メールだけで当てると、その人の名義まで書き換わる。名前まで見る。
+appful-devteam <info@appful.tokyo> Mitaberu <chisatof0131@gmail.com>
+appful-devteam <info@appful.tokyo> mitaberu <chisatof0131@gmail.com>
+appful-devteam <info@appful.tokyo> mitaberu <devteam260304@gmail.com>
